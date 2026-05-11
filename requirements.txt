@@ -1,0 +1,11 @@
+openai>=2.0.0
+python-dotenv>=1.0.1
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+rich>=13.7.0
+structlog>=24.1.0
+livekit-agents==0.12.21
+livekit-plugins-deepgram==0.6.20
+livekit-plugins-cartesia==0.4.12
+livekit-plugins-silero==0.6.4
+livekit-plugins-turn-detector==0.4.5
