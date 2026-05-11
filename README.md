@@ -110,7 +110,7 @@ pytest tests/test_outer_loop.py -vv
 - If the room connection keeps timing out, verify the LiveKit URL, API key, and API secret in `.env`.
 - If `opencode` is not found, install the OpenCode CLI or add it to your `PATH`.
 
-## Project Layout
+## Project Structure
 
 ```text
 VOICE-OPENCODE/
