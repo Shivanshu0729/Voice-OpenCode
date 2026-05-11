@@ -113,10 +113,49 @@ pytest tests/test_outer_loop.py -vv
 ## Project Layout
 
 ```text
-agent/
-	core/           Voice pipeline, intent routing, TTS, STT, VAD
-	subagents/      File, command, coding, and filesystem workers
-	utils/          Logging and latency helpers
-config/           Settings and environment loading
-tests/            Regression tests
+VOICE-OPENCODE/
+│
+├── agent/
+│   ├── core/
+│   │   ├── intent.py
+│   │   ├── llm_adapter.py
+│   │   ├── outer_loop.py
+│   │   ├── stt.py
+│   │   ├── tts.py
+│   │   ├── turn_detector.py
+│   │   └── vad.py
+│   │
+│   ├── subagents/
+│   │   ├── executer.py
+│   │   ├── filesystem.py
+│   │   ├── opencode.py
+│   │   └── pool.py
+│   │
+│   ├── utils/
+│   │   ├── latency.py
+│   │   └── logger.py
+│   │
+│   └── main.py
+│
+├── config/
+│   └── settings.py
+│
+├── scripts/
+│   └── measure_latency.py
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_opencode.py
+│   ├── test_outer_loop.py
+│   ├── test_subagents.py
+│   └── test_tts.py
+│
+├── .env
+├── .env.example
+├── .gitignore
+├── generate_token.py
+├── measure_latency.py
+├── README.md
+├── requirements.txt
+└── requirements-dev.txt
 ```
